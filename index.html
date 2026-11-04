@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonjones Store - Especialistas em Hasselblad</title>
+    <!-- Vinculação do CSS externo -->
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jonjones Store - Especialistas em Hasselblad</h1>
+        <p>A sua loja exclusiva de equipamentos fotográficos de médio formato.</p>
+        <img src="https://jaojonjuca-cell.github.io/trabalho-e-commerce-2/bannerloja.jpg" alt="Banner oficial da loja Jonjones Store" class="banner">
+        <p><strong>Frete e seguro gratuito para todo o país em equipamentos Hasselblad!</strong></p>
+        
+        <nav>
+            <ul>
+                <li><a href="#destaques">Produtos em Destaque</a></li>
+                <li><a href="#tabela-comparativa">Comparativo Técnico</a></li>
+                <li><a href="#carrinho">O Meu Carrinho</a></li>
+                <li><a href="#checkout">Finalizar Pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Categorias de Produtos</h2>
+            <ul>
+                <li>Câmaras de Formato Médio</li>
+                <li>Objetivas XCD</li>
+                <li>Baterias e Acessórios</li>
+            </ul>
+
+            <br>
+            <!-- Método GET-->
+            <h3>Pesquisa Rápida</h3>
+            <form action="parte4.html" method="get">
+                <label for="busca">Buscar Produto:</label>
+                <input type="search" name="q" id="busca" placeholder="Digite o produto...">
+                
+                <label for="categoria">Categoria:</label>
+                <select name="categoria" id="categoria">
+                    <option value="todos">Todos</option>
+                    <option value="cameras">Câmeras</option>
+                    <option value="objetivas">Objetivas</option>
+                    <option value="acessorios">Acessórios (Periféricos)</option>
+                    <option value="estudio">Equipamento de Estúdio</option>
+                </select>
+                
+                <button type="submit">Buscar</button>
+            </form>
+        </aside>
+
+        <div class="conteudo">
+            <section id="destaques">
+                <h2>Produtos em Destaque</h2>
+
+                <article>
+                    <h3>Câmara Hasselblad X2D 100C</h3>
+                    <img src="https://jaojonjuca-cell.github.io/trabalho-e-commerce-2/phototrend-test_hasselblad_x2d_ii_100c_packshot-09361.webp" alt="Foto da Câmara Hasselblad X2D 100C frontal">
+                    <p>Câmara digital mirrorless de médio formato com sensor de 100 MP e design <i>Premium</i> clássico.</p>
+                    <h4>Preço: <b>55.000,00 R$</b> <span>(A pronto pagamento no PIX)</span></h4>
+                    
+                    <video controls>
+                        <source src="https://jaojonjuca-cell.github.io/trabalho-e-commerce-2/videoplayback.mp4" type="video/mp4">
+                        <source src="https://jaojonjuca-cell.github.io/trabalho-e-commerce-2/videoplayback.webm" type="video/webm">
+                        O seu navegador não suporta a tag de vídeo HTML5. Por favor, atualize o seu navegador.
+                    </video>
+                    <br>
+                    <a href="#carrinho" class="btn">Adicionar ao Carrinho</a>
+                </article>
+
+                <article>
+                    <h3>Câmara Hasselblad 907X 50C</h3>
+                    <img src="https://jaojonjuca-cell.github.io/trabalho-e-commerce-2/58700-2T.webp" alt="Foto da Câmara Hasselblad 907X 50C modular">
+                    <p>Câmara modular que une o legado analógico à tecnologia digital com ecrã <i>Touchscreen</i>.</p>
+                    <h4>Preço: <b>42.000,00 R$</b> <span>(A pronto pagamento no PIX)</span></h4>
+                    <a href="#carrinho" class="btn">Adicionar ao Carrinho</a>
+                </article>
+
+                <article>
+                    <h3>Hub de Carregamento de Baterias Hasselblad</h3>
+                    <img src="https://jaojonjuca-cell.github.io/trabalho-e-commerce-2/hub.webp" alt="Foto do Hub de Carregamento Hasselblad frontal">
+                    <p>Periférico essencial para estúdio. Carregador duplo rápido para baterias do sistema X e V, garantindo fluxo contínuo de trabalho com suporte nativo <i>USB-C</i>.</p>
+                    <h4>Preço: <b>1.250,00 R$</b> <span>(A pronto pagamento no PIX)</span></h4>
+                    <a href="#carrinho" class="btn">Adicionar ao Carrinho</a>
+                </article>
+            </section>
+
+            <section id="tabela-comparativa">
+                <h2>Especificações Técnicas Comparativas</h2>
+                <p>Conheça os detalhes dos nossos equipamentos. <em>Garantia mundial estendida direto com o fabricante.</em></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Conectividade</th>
+                            <th>Peso (Corpo)</th>
+                            <th>Garantia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hasselblad X2D 100C</td>
+                            <td>Wi-Fi, USB-C 3.1</td>
+                            <td>895g</td>
+                            <td>3 anos</td>
+                        </tr>
+                        <tr>
+                            <td>Hasselblad 907X 50C</td>
+                            <td>Wi-Fi, USB-C 3.0</td>
+                            <td>740g</td>
+                            <td>3 anos</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="checkout">
+                <h2>Finalizar Pedido e Cadastro</h2>
+                <form action="processa-pedido.html" method="post">
+                    
+                    <fieldset>
+                        <legend>Dados Pessoais e Acesso</legend>
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" name="nome" id="nome" required>
+                        
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required>
+                        
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" id="senha" required>
+                        
+                        <label for="nascimento">Data de nascimento:</label>
+                        <input type="date" name="nascimento" id="nascimento">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Entrega e Pagamento</legend>
+                        <label for="quantidade">Quantidade do item:</label>
+                        <input type="number" name="quantidade" id="quantidade" min="1" max="10" value="1">
+                        
+                        <p class="radio-label">Modalidade de frete:</p>
+                        <div class="radio-group">
+                            <input type="radio" name="frete" id="frete_padrao" value="padrao" required>
+                            <label for="frete_padrao">Entrega Padrão (Grátis)</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="frete" id="frete_expressa" value="expressa">
+                            <label for="frete_expressa">Entrega Expressa (Taxa Adicional)</label>
+                        </div>
+                        
+                        <label for="pagamento">Forma de pagamento:</label>
+                        <select name="pagamento" id="pagamento" required>
+                            <option value="" disabled selected>Selecione a forma de pagamento</option>
+                            <option value="pix">Pix</option>
+                            <option value="cartao">Cartão de Crédito</option>
+                            <option value="boleto">Boleto Bancário</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Comentários e Termos</legend>
+                        <label for="observacoes">Observações do pedido:</label>
+                        <textarea name="observacoes" id="observacoes" rows="4" placeholder="Ponto de referência, instruções de entrega..."></textarea>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="termos" id="termos" required>
+                            <label for="termos">Aceito os termos de uso e condições da loja</label>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="ofertas" id="ofertas">
+                            <label for="ofertas">Desejo receber ofertas por e-mail</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit">Finalizar Pedido</button>
+                        <button type="reset" class="btn-reset">Limpar Formulário</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <section id="carrinho">
+        <h2>O Meu Carrinho de Compras</h2>
+        <p>
+            1x Câmara Hasselblad X2D 100C - 55.000,00 R$<br>
+            1x Câmara Hasselblad 907X 50C - 42.000,00 R$<br>
+            <strong>Total Estimado: 97.000,00 R$</strong>
+        </p>
+        <a href="#checkout" class="btn">Finalizar Compra</a>
+        <a href="#destaques" class="btn btn-secondary">Continuar Comprando</a>
+    </section>
+
+    <footer>
+        <h3>Políticas e Atendimento</h3>
+        <p>
+            <a href="#">Termos de Utilização e Garantia</a> | 
+            <a href="#">Instagram da Jonjones Store</a> | 
+            <a href="#">Central de Suporte Exclusivo</a>
+        </p>
+        <p>Copyright © 2026 Jonjones Store - NIF/CNPJ: 12.001.044/0001-00</p>
+    </footer>
+
+</body>
+</html>
